@@ -10,10 +10,21 @@ import UIKit
 
 class DemoViewController: UIViewController {
 
+    private var translucid: Translucid?
+    
     override func loadView() {
         super.loadView()
         
         self.view.backgroundColor = UIColor.redColor()
+        self.translucid = Translucid()
+        
+        self.view.addSubview(self.translucid!)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.translucid!.frame = CGRectMake(0, 0, 100, 100)
     }
     
 }
