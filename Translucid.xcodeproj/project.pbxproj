@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEA7AE981C23DED000C89F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7AE901C23DED000C89F0A /* AppDelegate.swift */; };
+		BEA7AE991C23DED000C89F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE911C23DED000C89F0A /* Assets.xcassets */; };
+		BEA7AE9A1C23DED000C89F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE921C23DED000C89F0A /* LaunchScreen.storyboard */; };
+		BEA7AE9C1C23DED000C89F0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE961C23DED000C89F0A /* Info.plist */; };
+		BEA7AEA01C23DFC000C89F0A /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7AE9F1C23DFC000C89F0A /* DemoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEA7AE7B1C23DE7000C89F0A /* Translucid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translucid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA7AE901C23DED000C89F0A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Example/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		BEA7AE911C23DED000C89F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Example/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		BEA7AE931C23DED000C89F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		BEA7AE961C23DED000C89F0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Example/Info.plist; sourceTree = SOURCE_ROOT; };
+		BEA7AE9F1C23DFC000C89F0A /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoViewController.swift; path = Example/DemoViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEA7AE781C23DE7000C89F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEA7AE721C23DE6F00C89F0A = {
+			isa = PBXGroup;
+			children = (
+				BEA7AE7D1C23DE7000C89F0A /* Translucid */,
+				BEA7AE7C1C23DE7000C89F0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEA7AE7C1C23DE7000C89F0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEA7AE7B1C23DE7000C89F0A /* Translucid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA7AE7D1C23DE7000C89F0A /* Translucid */ = {
+			isa = PBXGroup;
+			children = (
+				BEA7AE9E1C23DF3400C89F0A /* Source */,
+				BEA7AE901C23DED000C89F0A /* AppDelegate.swift */,
+				BEA7AE911C23DED000C89F0A /* Assets.xcassets */,
+				BEA7AE921C23DED000C89F0A /* LaunchScreen.storyboard */,
+				BEA7AE961C23DED000C89F0A /* Info.plist */,
+				BEA7AE9F1C23DFC000C89F0A /* DemoViewController.swift */,
+			);
+			path = Translucid;
+			sourceTree = "<group>";
+		};
+		BEA7AE9E1C23DF3400C89F0A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEA7AE7A1C23DE7000C89F0A /* Translucid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA7AE8D1C23DE7000C89F0A /* Build configuration list for PBXNativeTarget "Translucid" */;
+			buildPhases = (
+				BEA7AE771C23DE7000C89F0A /* Sources */,
+				BEA7AE781C23DE7000C89F0A /* Frameworks */,
+				BEA7AE791C23DE7000C89F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Translucid;
+			productName = Translucid;
+			productReference = BEA7AE7B1C23DE7000C89F0A /* Translucid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEA7AE731C23DE6F00C89F0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Ekhoo;
+				TargetAttributes = {
+					BEA7AE7A1C23DE7000C89F0A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = BEA7AE761C23DE6F00C89F0A /* Build configuration list for PBXProject "Translucid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEA7AE721C23DE6F00C89F0A;
+			productRefGroup = BEA7AE7C1C23DE7000C89F0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEA7AE7A1C23DE7000C89F0A /* Translucid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEA7AE791C23DE7000C89F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA7AE9C1C23DED000C89F0A /* Info.plist in Resources */,
+				BEA7AE991C23DED000C89F0A /* Assets.xcassets in Resources */,
+				BEA7AE9A1C23DED000C89F0A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEA7AE771C23DE7000C89F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA7AE981C23DED000C89F0A /* AppDelegate.swift in Sources */,
+				BEA7AEA01C23DFC000C89F0A /* DemoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEA7AE921C23DED000C89F0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA7AE931C23DED000C89F0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEA7AE8B1C23DE7000C89F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEA7AE8C1C23DE7000C89F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEA7AE8E1C23DE7000C89F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ekhoo.Translucid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEA7AE8F1C23DE7000C89F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ekhoo.Translucid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEA7AE761C23DE6F00C89F0A /* Build configuration list for PBXProject "Translucid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA7AE8B1C23DE7000C89F0A /* Debug */,
+				BEA7AE8C1C23DE7000C89F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA7AE8D1C23DE7000C89F0A /* Build configuration list for PBXNativeTarget "Translucid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA7AE8E1C23DE7000C89F0A /* Debug */,
+				BEA7AE8F1C23DE7000C89F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEA7AE731C23DE6F00C89F0A /* Project object */;
+}
