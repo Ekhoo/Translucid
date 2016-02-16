@@ -13,7 +13,6 @@
 		BEA7AE9C1C23DED000C89F0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE961C23DED000C89F0A /* Info.plist */; };
 		BEA7AEA01C23DFC000C89F0A /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7AE9F1C23DFC000C89F0A /* DemoViewController.swift */; };
 		BEFC40361C23E2410016F29C /* Translucid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFC40351C23E2410016F29C /* Translucid.swift */; };
-		DEDFEE24B4C1B15173D9924B /* Pods_Translucid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1516CE39E944D4971138CB35 /* Pods_Translucid.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDFEE24B4C1B15173D9924B /* Pods_Translucid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +102,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEA7AE8D1C23DE7000C89F0A /* Build configuration list for PBXNativeTarget "Translucid" */;
 			buildPhases = (
-				27F2BB2EC2F1FD94DA54EB3D /* Check Pods Manifest.lock */,
 				BEA7AE771C23DE7000C89F0A /* Sources */,
 				BEA7AE781C23DE7000C89F0A /* Frameworks */,
 				BEA7AE791C23DE7000C89F0A /* Resources */,
-				D47FB5DCC0285F7BE5210408 /* Embed Pods Frameworks */,
-				586508D04704F92AD0CEA00A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,54 +161,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		27F2BB2EC2F1FD94DA54EB3D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		586508D04704F92AD0CEA00A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Translucid/Pods-Translucid-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D47FB5DCC0285F7BE5210408 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Translucid/Pods-Translucid-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEA7AE771C23DE7000C89F0A /* Sources */ = {
