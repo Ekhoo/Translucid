@@ -13,7 +13,6 @@ public class Translucid: UIView {
     private let textLayer: CATextLayer = CATextLayer()
     
     public var text: String?
-    public var images: [UIImage]?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,14 +26,18 @@ public class Translucid: UIView {
         self.commonInit()
     }
     
-    override public func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
+        
+        self.textLayer.frame = self.bounds
     }
     
     private func commonInit() {
-        self.initConstraints()
-    }
-    
-    private func initConstraints() {
+        self.backgroundColor = UIColor.blueColor()
+        
+        self.textLayer.backgroundColor = UIColor.greenColor().CGColor
+        self.textLayer.string = "Coucou"
+        
+        self.layer.addSublayer(self.textLayer)
     }
 }

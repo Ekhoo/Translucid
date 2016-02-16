@@ -16,15 +16,13 @@ class DemoViewController: UIViewController {
         super.loadView()
         
         self.view.backgroundColor = UIColor.redColor()
-        self.translucid = Translucid()
+        self.translucid = Translucid(frame: CGRectMake(0, 0, 100, 100))
         
         self.view.addSubview(self.translucid!)
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        self.translucid!.frame = CGRectMake(0, 0, 100, 100)
     }
     
 }
