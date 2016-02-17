@@ -12,7 +12,12 @@ public class Translucid: UIView {
 
     private let textLayer: CATextLayer = CATextLayer()
     
-    
+    public override var frame: CGRect {
+        didSet {
+            self.textLayer.frame = frame
+            self.autoResizeTextLayer()
+        }
+    }
     public var text: String?
     
     public override init(frame: CGRect) {
@@ -29,25 +34,32 @@ public class Translucid: UIView {
     
     private func autoResizeTextLayer() {
         var fontSize: CGFloat = 1.0
-        var rect: CGRect = NSString(string: "Coucou Salut Bonjour").boundingRectWithSize(self.bounds.size, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(fontSize)], context: nil)
+        var rect: CGRect = NSString(string: "Coucou Salut").boundingRectWithSize(CGSizeMake(self.bounds.width, CGFloat(MAXFLOAT)), options: .UsesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(fontSize)], context: nil)
         
-        while rect.width > 0.0 && CGRectContainsRect(self.bounds, rect) {
+        while rect.size.height < self.bounds.size.height {
             fontSize++
-            rect = NSString(string: "Coucou Salut Bonjour").boundingRectWithSize(self.bounds.size, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(fontSize)], context: nil)
+            rect = NSString(string: "Coucou Salut").boundingRectWithSize(CGSizeMake(self.bounds.width, CGFloat(MAXFLOAT)), options: .UsesLineFragmentOrigin, attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(fontSize)], context: nil)
         }
         
-        self.textLayer.fontSize = --fontSize;
+        --fontSize
+        
+        self.textLayer.fontSize = fontSize
+        self.textLayer.font = UIFont.boldSystemFontOfSize(fontSize)
     }
     
     private func commonInit() {
         self.backgroundColor = UIColor.blueColor()
         
         self.textLayer.backgroundColor = UIColor.greenColor().CGColor
-        self.textLayer.string = "Coucou Salut Bonjour"
+        self.textLayer.string = "Coucou Salut"
         self.textLayer.alignmentMode = kCAAlignmentCenter
         self.textLayer.frame = self.bounds
-        self.textLayer.font = UIFont.boldSystemFontOfSize(200.0)
+        self.textLayer.font = UIFont.boldSystemFontOfSize(0)
+        self.textLayer.fontSize = 0.0;
         self.textLayer.wrapped = true
+        self.textLayer.rasterizationScale = UIScreen.mainScreen().scale
+        self.textLayer.truncationMode = kCATruncationEnd
+        self.textLayer.contentsScale = UIScreen.mainScreen().scale
         
         self.autoResizeTextLayer()
         
