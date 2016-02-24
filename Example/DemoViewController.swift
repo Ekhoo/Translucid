@@ -15,16 +15,14 @@ class DemoViewController: UIViewController {
     override func loadView() {
         super.loadView()
         
-        self.view.backgroundColor = UIColor.redColor()
-        self.translucid = Translucid(frame: CGRectMake(0, 0, 100, 50))
+        self.view.backgroundColor = UIColor.whiteColor()
+        self.translucid = Translucid(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2))
+        self.translucid!.font = UIFont(name: "Starjedi", size: 20)!
+        self.translucid!.text = "Star Wars"
+        self.translucid!.center = CGPointMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame))
+        
         
         self.view.addSubview(self.translucid!)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        self.translucid!.frame = self.view.bounds
     }
     
 }
