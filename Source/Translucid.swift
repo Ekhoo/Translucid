@@ -22,7 +22,7 @@ public class Translucid: UIView {
     
     public override var frame: CGRect {
         didSet {
-            self.imageLayer.frame = self.bounds
+            self.imageLayer.frame = CGRectMake(0.0, 0.0, self.bounds.size.width, self.bounds.size.height + 200.0)
             self.textLayer.frame = self.bounds
             self.autoResizeTextLayer()
         }
@@ -45,6 +45,18 @@ public class Translucid: UIView {
         super.init(coder: aDecoder)
         
         self.commonInit()
+    }
+    
+    public func animate() {
+        let animation: CABasicAnimation = CABasicAnimation(keyPath: "position")
+        
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.fromValue = NSValue(CGPoint: self.imageLayer.position)
+        animation.toValue = NSValue(CGPoint: CGPointMake(self.imageLayer.position.x, self.imageLayer.position.y - 200))
+        animation.duration = 15.0
+        animation.autoreverses = true
+        
+        self.imageLayer.addAnimation(animation, forKey: "transform")
     }
     
     private func autoResizeTextLayer() {
@@ -77,8 +89,7 @@ public class Translucid: UIView {
         
         self.autoResizeTextLayer()
         
-        self.imageLayer.mask = self.textLayer
-        
         self.layer.addSublayer(self.imageLayer)
+        self.layer.mask = self.textLayer;
     }
 }

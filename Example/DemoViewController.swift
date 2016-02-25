@@ -28,6 +28,9 @@ class DemoViewController: UIViewController {
         
         self.view.addSubview(star)
         self.view.addSubview(wars)
+        
+        star.animate()
+        wars.animate()
     }
     
 }
