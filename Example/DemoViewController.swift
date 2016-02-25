@@ -9,20 +9,25 @@
 import UIKit
 
 class DemoViewController: UIViewController {
-
-    private var translucid: Translucid?
     
     override func loadView() {
         super.loadView()
         
         self.view.backgroundColor = UIColor.whiteColor()
-        self.translucid = Translucid(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2))
-        self.translucid!.font = UIFont(name: "Starjedi", size: 20)!
-        self.translucid!.text = "Star Wars"
-        self.translucid!.center = CGPointMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame))
         
+        let deviceScreenSize: CGFloat = UIScreen.mainScreen().bounds.height
+        let offset: CGFloat = deviceScreenSize > 320.0 ? 50.0 : 35.0
         
-        self.view.addSubview(self.translucid!)
+        let star: Translucid = Translucid(frame: CGRectMake(0.0, offset, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2.0))
+        star.font = UIFont(name: "Starjedi", size: 20)!
+        star.text = "Star"
+
+        let wars: Translucid = Translucid(frame: CGRectMake(0.0, CGRectGetHeight(self.view.frame) / 2.0 - offset, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2.0))
+        wars.font = UIFont(name: "Starjedi", size: 20)!
+        wars.text = "Wars"
+        
+        self.view.addSubview(star)
+        self.view.addSubview(wars)
     }
     
 }

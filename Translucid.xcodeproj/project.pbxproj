@@ -12,7 +12,6 @@
 		BEA7AE981C23DED000C89F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7AE901C23DED000C89F0A /* AppDelegate.swift */; };
 		BEA7AE991C23DED000C89F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE911C23DED000C89F0A /* Assets.xcassets */; };
 		BEA7AE9A1C23DED000C89F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE921C23DED000C89F0A /* LaunchScreen.storyboard */; };
-		BEA7AE9C1C23DED000C89F0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA7AE961C23DED000C89F0A /* Info.plist */; };
 		BEA7AEA01C23DFC000C89F0A /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7AE9F1C23DFC000C89F0A /* DemoViewController.swift */; };
 		BEFC40361C23E2410016F29C /* Translucid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFC40351C23E2410016F29C /* Translucid.swift */; };
 /* End PBXBuildFile section */
@@ -168,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA7AE9C1C23DED000C89F0A /* Info.plist in Resources */,
 				BEA7AE991C23DED000C89F0A /* Assets.xcassets in Resources */,
 				BE1747231C7D9B8500593D68 /* stars in Resources */,
 				BE81EC201C7D96B300B37462 /* Starjedi.ttf in Resources */,
@@ -286,7 +284,6 @@
 		};
 		BEA7AE8E1C23DE7000C89F0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3F9F99BCB0556484B2F94A3 /* Pods-Translucid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -302,7 +299,6 @@
 		};
 		BEA7AE8F1C23DE7000C89F0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60A0164E15EAF7E68F4AB50A /* Pods-Translucid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
