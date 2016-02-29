@@ -6,7 +6,7 @@
 ![](https://img.shields.io/badge/Supported-iOS8-4BC51D.svg?style=flat-square)
 ![](https://img.shields.io/badge/Swift 2-compatible-4BC51D.svg?style=flat-square)
 
-Simple and light weight UIView that animate texte with an image.
+Simple and light weight UIView that animate text with an image.
 
 # Demo
 ![Translucid](https://github.com/Ekhoo/Translucid/blob/master/Example/Resources/demo.gif)
