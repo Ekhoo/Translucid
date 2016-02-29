@@ -21,10 +21,12 @@ class DemoViewController: UIViewController {
         let star: Translucid = Translucid(frame: CGRectMake(0.0, offset, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2.0))
         star.font = UIFont(name: "Starjedi", size: 20)!
         star.text = "Star"
+        star.backgroundImage = UIImage(named: "stars")
 
         let wars: Translucid = Translucid(frame: CGRectMake(0.0, CGRectGetHeight(self.view.frame) / 2.0 - offset, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2.0))
         wars.font = UIFont(name: "Starjedi", size: 20)!
         wars.text = "Wars"
+        wars.backgroundImage = UIImage(named: "stars")
         
         self.view.addSubview(star)
         self.view.addSubview(wars)

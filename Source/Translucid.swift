@@ -19,6 +19,14 @@ public class Translucid: UIView {
             self.autoResizeTextLayer()
         }
     }
+
+    public var backgroundImage: UIImage? {
+        didSet {
+            if let image = backgroundImage {
+                self.imageLayer.contents = image.CGImage
+            }
+        }
+    }
     
     public override var frame: CGRect {
         didSet {
@@ -55,6 +63,7 @@ public class Translucid: UIView {
         animation.toValue = NSValue(CGPoint: CGPointMake(self.imageLayer.position.x, self.imageLayer.position.y - 200))
         animation.duration = 15.0
         animation.autoreverses = true
+        animation.repeatCount = Float.infinity
         
         self.imageLayer.addAnimation(animation, forKey: "transform")
     }
@@ -75,8 +84,6 @@ public class Translucid: UIView {
     }
     
     private func commonInit() {
-        self.imageLayer.contents = UIImage(named: "stars")?.CGImage
-
         self.textLayer.string = self.text
         self.textLayer.alignmentMode = kCAAlignmentCenter
         self.textLayer.frame = self.bounds
