@@ -97,6 +97,6 @@ public class Translucid: UIView {
         self.autoResizeTextLayer()
         
         self.layer.addSublayer(self.imageLayer)
-        self.layer.mask = self.textLayer;
+        self.layer.mask = self.textLayer
     }
 }
