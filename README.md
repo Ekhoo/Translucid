@@ -22,6 +22,18 @@ pod "Translucid", '~> 0.0.1'
 
 # Usage
 ```swift
+    override func loadView() {
+        super.loadView()
+        
+        let starWars: Translucid = Translucid(frame: self.view.bounds)
+        starWars.font = UIFont(name: "Starjedi", size: 20)!
+        starWars.text = "Star Wars"
+        starWars.backgroundImage = UIImage(named: "stars")
+        
+        self.view.addSubview(starWars)
+        
+        starWars.animate()
+    }
 ```
 
 # Author
