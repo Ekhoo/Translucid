@@ -73,11 +73,11 @@ public class Translucid: UIView {
         var rect: CGRect = NSString(string: self.text).boundingRectWithSize(CGSizeMake(self.bounds.width, CGFloat(MAXFLOAT)), options: .UsesLineFragmentOrigin, attributes: [NSFontAttributeName: self.font.fontWithSize(fontSize)], context: nil)
         
         while rect.size.height < self.bounds.size.height {
-            fontSize++
+            fontSize += 1
             rect = NSString(string: self.text).boundingRectWithSize(CGSizeMake(self.bounds.width, CGFloat(MAXFLOAT)), options: .UsesLineFragmentOrigin, attributes: [NSFontAttributeName: self.font.fontWithSize(fontSize)], context: nil)
         }
         
-        --fontSize
+        fontSize -= 1
         
         self.textLayer.fontSize = fontSize
         self.textLayer.font = self.font.fontWithSize(fontSize)
