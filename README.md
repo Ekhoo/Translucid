@@ -5,6 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Translucid.svg?style=flat)](http://cocoapods.org/pods/Translucid)
 ![](https://img.shields.io/badge/Supported-iOS8-4BC51D.svg?style=flat-square)
 ![](https://img.shields.io/badge/Swift 2-compatible-4BC51D.svg?style=flat-square)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Simple and light weight UIView that animate text with an image.
 
