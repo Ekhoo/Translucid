@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Translucid"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Amazing text animated by an image, written in swift."
 
   s.description  = "Simple and light weight UIView that animate text with an image."
