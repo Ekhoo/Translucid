@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE027F4B1D5B1A8500493036 /* TranslucidFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BE027F4A1D5B1A8500493036 /* TranslucidFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE027F4F1D5B1A8500493036 /* TranslucidFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE027F481D5B1A8500493036 /* TranslucidFramework.framework */; };
+		BE027F511D5B1A8500493036 /* TranslucidFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE027F481D5B1A8500493036 /* TranslucidFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE027F551D5B1A9600493036 /* Translucid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFC40351C23E2410016F29C /* Translucid.swift */; };
 		BE1747231C7D9B8500593D68 /* stars in Resources */ = {isa = PBXBuildFile; fileRef = BE1747221C7D9B8500593D68 /* stars */; };
 		BE81EC201C7D96B300B37462 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE81EC1F1C7D96B300B37462 /* Starjedi.ttf */; };
 		BEA7AE981C23DED000C89F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7AE901C23DED000C89F0A /* AppDelegate.swift */; };
@@ -16,9 +20,36 @@
 		BEFC40361C23E2410016F29C /* Translucid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFC40351C23E2410016F29C /* Translucid.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BE027F4D1D5B1A8500493036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA7AE731C23DE6F00C89F0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE027F471D5B1A8500493036;
+			remoteInfo = TranslucidFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE027F501D5B1A8500493036 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE027F511D5B1A8500493036 /* TranslucidFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1516CE39E944D4971138CB35 /* Pods_Translucid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Translucid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A0164E15EAF7E68F4AB50A /* Pods-Translucid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translucid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Translucid/Pods-Translucid.release.xcconfig"; sourceTree = "<group>"; };
+		BE027F481D5B1A8500493036 /* TranslucidFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TranslucidFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE027F4A1D5B1A8500493036 /* TranslucidFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucidFramework.h; sourceTree = "<group>"; };
+		BE027F4C1D5B1A8500493036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1747221C7D9B8500593D68 /* stars */ = {isa = PBXFileReference; lastKnownFileType = file; name = stars; path = Example/Resources/stars; sourceTree = SOURCE_ROOT; };
 		BE81EC1F1C7D96B300B37462 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjedi.ttf; path = Example/Resources/Starjedi.ttf; sourceTree = SOURCE_ROOT; };
 		BEA7AE7B1C23DE7000C89F0A /* Translucid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translucid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +63,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE027F441D5B1A8500493036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEA7AE781C23DE7000C89F0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE027F4F1D5B1A8500493036 /* TranslucidFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +98,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BE027F491D5B1A8500493036 /* TranslucidFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BE027F4A1D5B1A8500493036 /* TranslucidFramework.h */,
+				BE027F4C1D5B1A8500493036 /* Info.plist */,
+			);
+			path = TranslucidFramework;
+			sourceTree = "<group>";
+		};
 		BE81EC1E1C7D96A000B37462 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BEA7AE7D1C23DE7000C89F0A /* Translucid */,
+				BE027F491D5B1A8500493036 /* TranslucidFramework */,
 				BEA7AE7C1C23DE7000C89F0A /* Products */,
 				B35D8B48714E86A5827424E0 /* Pods */,
 				15C4E546576938DEA0334AD1 /* Frameworks */,
@@ -82,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				BEA7AE7B1C23DE7000C89F0A /* Translucid.app */,
+				BE027F481D5B1A8500493036 /* TranslucidFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +160,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BE027F451D5B1A8500493036 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE027F4B1D5B1A8500493036 /* TranslucidFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		BE027F471D5B1A8500493036 /* TranslucidFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE027F541D5B1A8500493036 /* Build configuration list for PBXNativeTarget "TranslucidFramework" */;
+			buildPhases = (
+				BE027F431D5B1A8500493036 /* Sources */,
+				BE027F441D5B1A8500493036 /* Frameworks */,
+				BE027F451D5B1A8500493036 /* Headers */,
+				BE027F461D5B1A8500493036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranslucidFramework;
+			productName = TranslucidFramework;
+			productReference = BE027F481D5B1A8500493036 /* TranslucidFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		BEA7AE7A1C23DE7000C89F0A /* Translucid */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEA7AE8D1C23DE7000C89F0A /* Build configuration list for PBXNativeTarget "Translucid" */;
@@ -118,10 +197,12 @@
 				BEA7AE771C23DE7000C89F0A /* Sources */,
 				BEA7AE781C23DE7000C89F0A /* Frameworks */,
 				BEA7AE791C23DE7000C89F0A /* Resources */,
+				BE027F501D5B1A8500493036 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE027F4E1D5B1A8500493036 /* PBXTargetDependency */,
 			);
 			name = Translucid;
 			productName = Translucid;
@@ -138,6 +219,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Ekhoo;
 				TargetAttributes = {
+					BE027F471D5B1A8500493036 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B68QLRDMYT;
+					};
 					BEA7AE7A1C23DE7000C89F0A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = B68QLRDMYT;
@@ -158,11 +243,19 @@
 			projectRoot = "";
 			targets = (
 				BEA7AE7A1C23DE7000C89F0A /* Translucid */,
+				BE027F471D5B1A8500493036 /* TranslucidFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE027F461D5B1A8500493036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEA7AE791C23DE7000C89F0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +270,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE027F431D5B1A8500493036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE027F551D5B1A9600493036 /* Translucid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEA7AE771C23DE7000C89F0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +289,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE027F4E1D5B1A8500493036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE027F471D5B1A8500493036 /* TranslucidFramework */;
+			targetProxy = BE027F4D1D5B1A8500493036 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BEA7AE921C23DED000C89F0A /* LaunchScreen.storyboard */ = {
@@ -201,6 +310,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BE027F521D5B1A8500493036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TranslucidFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ekhoo.TranslucidFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE027F531D5B1A8500493036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TranslucidFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ekhoo.TranslucidFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BEA7AE8B1C23DE7000C89F0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -288,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -303,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -314,6 +471,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE027F541D5B1A8500493036 /* Build configuration list for PBXNativeTarget "TranslucidFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE027F521D5B1A8500493036 /* Debug */,
+				BE027F531D5B1A8500493036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BEA7AE761C23DE6F00C89F0A /* Build configuration list for PBXProject "Translucid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
