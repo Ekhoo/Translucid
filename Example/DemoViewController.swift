@@ -13,17 +13,21 @@ class DemoViewController: UIViewController {
     override func loadView() {
         super.loadView()
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.white
         
-        let deviceScreenSize: CGFloat = UIScreen.mainScreen().bounds.height
+        let deviceScreenSize: CGFloat = UIScreen.main.bounds.height
         let offset: CGFloat = deviceScreenSize > 320.0 ? 50.0 : 35.0
         
-        let star: Translucid = Translucid(frame: CGRectMake(0.0, offset, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2.0))
+        
+        let star: Translucid = Translucid(frame: CGRect(x: 0, y: offset, width: self.view.frame.size.width, height: self.view.frame.size.height / 2))
         star.font = UIFont(name: "Starjedi", size: 20)!
         star.text = "Star"
         star.backgroundImage = UIImage(named: "stars")
 
-        let wars: Translucid = Translucid(frame: CGRectMake(0.0, CGRectGetHeight(self.view.frame) / 2.0 - offset, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) / 2.0))
+        
+        
+        
+        let wars: Translucid = Translucid(frame: CGRect(x: 0, y: self.view.frame.size.height / 2, width: self.view.frame.size.width, height: self.view.frame.size.height / 2))
         wars.font = UIFont(name: "Starjedi", size: 20)!
         wars.text = "Wars"
         wars.backgroundImage = UIImage(named: "stars")
